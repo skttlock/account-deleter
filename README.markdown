@@ -2,7 +2,6 @@
 **GOAL** contact customer service (known forward as "support") of given companies/websites with request to delete account.
 
 ## Resources
-- https://github.com/vlang/v
 - https://www.consumerprivacyact.com/section-1798-105-right-to-deletion/
 
 ## My Use Case
