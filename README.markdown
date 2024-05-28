@@ -12,24 +12,27 @@
 ## My Use Case
 - GOAL: quickly delete many (even hundreds) of online accounts.
 - FUNCTION: automate "Request for Account Deletion" emails
-- CONSIDERATIONS: legality, follow-ups, inability to delete account via email
+- CONSIDERATIONS: legality, follow-ups, inability to delete account via email, non-cooperation, multiple support addresses for single company
 
 - SCOPE CREEP: 
     - one user email vs many
     - pre-sorted vs sorting
+    - pre-compacted vs compacting
 ## Implementation Prototype
 - pre-reqs
     - accounts.csv
         - format: email,username,company
     - email_template
-        - variables: support_email, user_email, company_name, username, signature_name
+        - variables: support_emails, user_email, company_name, username, signature_name
 - program steps
     1. data handling
+        - variables:
+            - uhh
         - optional: log into user_email & store senders? - inspo: gh.com/Gobutsu/Conan
         1. ingest email_template
-        2. store
-        3. ingest accounts CSV
-        4. store 
+        2. store email_template
+        3. ingest accounts.csv
+        4. store account_list
     2. support email gathering
         1. collect support emails of companies listed
             1. check sources:
@@ -45,6 +48,23 @@
                 - online search 
                     - i.e. site:blizzard.com "support email"
                         - or "contact"...?
-        2. store
-    3. email construction
-        1. construct from template
+            2. confirm email validity?
+        2. store in company_list
+    3. make emails 
+        1. construct sample using template
+            1. choose first company
+            2. replace variables
+        2. output email for user preview
+        3. user confirmation
+        4. construct all emails
+            1. iterate company_list
+                1. new email
+                    - replace variables
+                2. store to email_list
+                3. iterate
+    4. send emails
+        1. user confirmation
+        2. iterate email_list
+            1. send
+            2. print success/fail
+            3. iterate
