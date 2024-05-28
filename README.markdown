@@ -16,7 +16,8 @@
         - format: email,username,company
 - program steps
     1. data handling
-        1. ingest CSV
+        - optional: log into email & store senders? - inspo: gh.com/Gobutsu/Conan
+        1. ingest accounts CSV
         2. group similiar companies
         3. store
         4. group similiar emails
@@ -36,4 +37,5 @@
                 - online search 
                     - i.e. site:blizzard.com "support email"
                         - or "contact"...?
-    3. 
+        2. store
+    3. uhhh
