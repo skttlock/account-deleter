@@ -10,7 +10,9 @@
 
 ## Outlining
 **GOAL** contact customer service (known forward as "support") of given companies/websites with request to delete account.
-![Program Steps.excalidraw.svg]
+
+![Alt text](./Program Steps.excalidraw.svg)
+<img src="./Program Steps.excalidraw.svg">
 
 ## Resources
 - information:
