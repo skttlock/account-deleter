@@ -1,4 +1,14 @@
 # Account Deleter program
+
+#### PROJECT CLOSED REFLECTION:
+- Reasoning for project closure:
+	- The method as designed is likely to be "filtered as spam by the companies email filters."
+	- Implementing a Playwright script would be tedious as every website would need a different script.
+	- This effort could therefore instead be better spent manually deleting each account.
+- Reflections:
+	- Using Mermaid.js for the first time, I found it to be a hassle. Excalidraw serves much better for diagramming.
+
+## Outlining
 **GOAL** contact customer service (known forward as "support") of given companies/websites with request to delete account.
 
 ## Resources
@@ -7,7 +17,9 @@
 - possible contacts:
     - Thorin Klosowski - Wirecutter @ New York Times
     - DeleteMe
-    - ...
+    - unroll.me
+- notes:
+    - college emails, from Handshake: "If you no longer have access to the Student email address associated with your account, please get in touch with your university's career center to have it deleted."
 
 ## My Use Case
 - GOAL: quickly delete many (even hundreds) of online accounts.
